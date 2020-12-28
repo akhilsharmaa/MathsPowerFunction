@@ -4,19 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        powerNumberfunction( 5  ,4);
+        System.out.println(powerNumberfunction( 5  ,4));
     }
 
-    public static void powerNumberfunction(int num , int power) {
+    public static int powerNumberfunction(int num , int power) {
 
-        int numD = num ;
-        int j = 0 ;
+        int answer = num;
+        int j ;
 
         for ( int n = 1; n <= power ; n++) {
 
-            System.out.println(j);
+            int i  = num * answer ;
+            answer = i ;
+//            System.out.println(answer);
         }
-
+        return answer;
     }
 
 }
